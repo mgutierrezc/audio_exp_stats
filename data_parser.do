@@ -52,5 +52,10 @@ end
 Importing and reshaping data
 ------------------*/
 
-***
+
 import delimited "$aux_path\all_apps_wide-2022-02-24 (5).csv", clear
+	
+	***
+	*Keeping variables of interest
+	***
+	keep mturk_worker_id sessionmturk_hitid asfc* dem* 
